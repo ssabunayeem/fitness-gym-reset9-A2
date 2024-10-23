@@ -1,0 +1,56 @@
+/* ------- common styles------ */
+:root {
+    --primary-color: rgb(230, 83, 60);
+    --secondary-gray-color: rgba(255, 255, 255, 0.5);
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    background: black;
+}
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    padding: 20px 190px;
+}
+
+
+/* ------ header related icon ------- */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.website-icon {
+    color: var(--primary-color);
+    font-weight: 5800;
+    font-size: 36px;
+}
+
+.nav-link {
+    border: 1px solid rgba(255, 255, 255, 0.267);
+    border-radius: 50px;
+    display: flex;
+}
+
+.nav-link>a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    padding: 5px 15px;
+}
+
+.color-link {
+    background-color: rgb(230, 83, 60);
+    border-radius: 50px;
+}
