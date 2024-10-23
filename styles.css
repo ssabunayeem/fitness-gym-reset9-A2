@@ -18,10 +18,34 @@ body {
     font-style: normal;
 }
 
-header {
-    padding: 2% 10%;
+.tangerine-regular {
+    font-family: "Tangerine", cursive;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 11rem;
 }
 
+header {
+    padding: 0% 10%;
+}
+
+h1,
+h2,
+h3,
+h4,
+a {
+    color: white;
+}
+
+.common-p {
+    color: var(--secondary-gray-color);
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
 
 /* ------ header related icon ------- */
 
@@ -33,8 +57,8 @@ nav {
 
 .website-icon {
     color: var(--primary-color);
-    font-weight: 5800;
-    font-size: 2.2rem;
+    font-weight: 800;
+    font-size: 3.5rem;
 }
 
 .nav-link {
@@ -44,20 +68,135 @@ nav {
 }
 
 .nav-link>a {
-    text-decoration: none;
-    color: white;
     margin-right: 1.25rem;
-    padding: 5px 1rem;
+    padding: 1rem 2rem;
 }
 
 .color-link {
     background-color: rgb(230, 83, 60);
-    border-radius: 16rem;
+    border-radius: 20rem;
 }
 
 .nav-link2 {
     display: none;
 }
+
+/* banner related styles */
+.banner {
+    margin-top: 70px;
+    display: flex;
+}
+
+.banner-part1,
+.banner-part2 {
+    width: 50%;
+}
+
+.banner-part1 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+
+}
+
+.banner-part2 {
+    text-align: right;
+}
+
+.banner-part2>img {
+    width: 60%;
+}
+
+.banner-title {
+    margin-bottom: 20px;
+    font-size: 6.5rem;
+    font-weight: 800;
+}
+
+.banner-p {
+    padding-right: 40%;
+}
+
+.button {
+    margin-top: 2rem;
+}
+
+.btn1,
+.btn2,
+.btn-mobile {
+    margin-top: 90px;
+    border: 1px solid white;
+    border-radius: 4rem;
+    padding: 1.7% 7%;
+}
+
+.btn1,
+.btn-mobile {
+    border-color: var(--primary-color);
+    margin-right: 14px;
+    background-color: var(--primary-color);
+}
+
+.btn-mobile {
+    display: none;
+}
+
+/* bos position style*/
+.banner-part2 {
+    position: relative;
+}
+
+.box1,
+.box2 {
+    backdrop-filter: blur(20px);
+    position: absolute;
+    padding: 10px 25px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 193px;
+    height: 98px;
+    left: 250px;
+    top: 569px;
+
+}
+
+.box2 {
+    width: 193px;
+    height: 98px;
+    left: 550px;
+    top: 159px;
+}
+
+.box-h {
+    margin: 0;
+    padding: 0;
+}
+
+.box-h2 {
+    font-size: 3em;
+}
+
+.box p {
+    margin: 5px 0;
+    padding: 0;
+}
+
+.ball {
+    background-color: var(--primary-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
 
 
 /* responsive  media for mobile
@@ -70,6 +209,9 @@ nav {
         padding: 2% 10%;
     }
 
+    .tangerine-regular {
+        font-size: 4rem;
+    }
 
     /* header style */
     .nav-link {
@@ -83,5 +225,53 @@ nav {
     .fa-solid {
         color: white;
         font-size: 2rem;
+    }
+
+    /* banner style */
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner-title {
+        margin-bottom: 10px;
+        font-size: 3em;
+        font-weight: 800;
+    }
+
+    .btn1 {
+        display: none;
+    }
+
+    .banner-part1,
+    .banner-part2 {
+        width: 100%;
+    }
+
+    .banner-p {
+        padding-right: 5%;
+    }
+
+    .btn-mobile {
+        display: block;
+    }
+
+    .banner-part2>img {
+        width: 100%;
+    }
+
+    .box1 {
+
+        width: 153px;
+        height: 88px;
+        left: 0px;
+        top: 399px;
+
+    }
+
+    .box2 {
+        width: 153px;
+        height: 88px;
+        left: 170px;
+        top: 89px;
     }
 }
