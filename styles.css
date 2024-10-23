@@ -19,7 +19,7 @@ body {
 }
 
 header {
-    padding: 20px 190px;
+    padding: 2% 10%;
 }
 
 
@@ -34,23 +34,54 @@ nav {
 .website-icon {
     color: var(--primary-color);
     font-weight: 5800;
-    font-size: 36px;
+    font-size: 2.2rem;
 }
 
 .nav-link {
     border: 1px solid rgba(255, 255, 255, 0.267);
-    border-radius: 50px;
+    border-radius: 16rem;
     display: flex;
 }
 
 .nav-link>a {
     text-decoration: none;
     color: white;
-    margin-right: 20px;
-    padding: 5px 15px;
+    margin-right: 1.25rem;
+    padding: 5px 1rem;
 }
 
 .color-link {
     background-color: rgb(230, 83, 60);
-    border-radius: 50px;
+    border-radius: 16rem;
+}
+
+.nav-link2 {
+    display: none;
+}
+
+
+/* responsive  media for mobile
+ */
+
+@media screen and (max-width: 576px) {
+
+    /* --common style-- */
+    header {
+        padding: 2% 10%;
+    }
+
+
+    /* header style */
+    .nav-link {
+        display: none;
+    }
+
+    .nav-link2 {
+        display: block;
+    }
+
+    .fa-solid {
+        color: white;
+        font-size: 2rem;
+    }
 }
