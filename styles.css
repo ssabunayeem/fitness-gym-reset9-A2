@@ -26,7 +26,8 @@ body {
 }
 
 header,
-.habit-section {
+.habit-section,
+.run {
     padding: 0% 10%;
     margin-bottom: 100px;
 }
@@ -41,7 +42,8 @@ a {
 
 .common-p {
     color: var(--secondary-gray-color);
-    font-size: 16px;
+    font-size: 18px;
+
 }
 
 a {
@@ -55,6 +57,10 @@ a {
 }
 
 /* ------ header related icon ------- */
+
+header {
+    background-image: linear-gradient(rgba(39, 38, 38, 0.349), rgba(104, 102, 102, 0.514), rgba(32, 32, 32, 0.281));
+}
 
 nav {
     display: flex;
@@ -121,7 +127,7 @@ nav {
 }
 
 #banner-p {
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .banner-p {
@@ -245,13 +251,56 @@ nav {
 }
 
 .habit-item>p {
-    width: 230px;
+    width: 250px;
 }
 
 
+/* Run an Extra Mile Easily section */
 
 
+.card {
+    display: flex;
+    gap: 165px;
+    padding: 30px 50px;
+    background-color: rgba(105, 103, 103, 0.541);
+    border-radius: 25px;
+}
 
+.card1 {
+    flex: 1.5;
+}
+
+.card1>p {
+
+    width: 70%;
+    margin-bottom: 30px;
+
+}
+
+.card-btn {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 20px 80px;
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    border: 0;
+
+}
+
+.card2 {
+    background-image: url("images/run.jpg");
+    background-position: right 35% bottom 70%;
+    background-size: 320%;
+    width: 466px;
+    height: 412px;
+    border-radius: 25px;
+    flex: 1;
+}
+
+.card2>img {
+    width: 150%;
+}
 
 
 
