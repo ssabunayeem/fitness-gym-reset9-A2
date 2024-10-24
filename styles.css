@@ -25,8 +25,10 @@ body {
     font-size: 11rem;
 }
 
-header {
+header,
+.habit-section {
     padding: 0% 10%;
+    margin-bottom: 100px;
 }
 
 h1,
@@ -39,12 +41,17 @@ a {
 
 .common-p {
     color: var(--secondary-gray-color);
-    font-size: 18px;
+    font-size: 16px;
 }
 
 a {
     text-decoration: none;
     font-size: 1.5rem;
+}
+
+.section-title {
+    font-size: 48px;
+    font-weight: 900;
 }
 
 /* ------ header related icon ------- */
@@ -111,6 +118,10 @@ nav {
     margin-bottom: 20px;
     font-size: 6.5rem;
     font-weight: 800;
+}
+
+#banner-p {
+    font-size: 18px;
 }
 
 .banner-p {
@@ -204,14 +215,74 @@ nav {
 
 
 
+/* Change Your Habits section */
+
+.habit-section {
+    text-align: center;
+
+}
+
+.habit-section>p {
+    padding: 0 27%;
+}
+
+.all-habits {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.habit-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+
+.habit-item>img {
+    border-radius: 50%;
+}
+
+.habit-item>p {
+    width: 230px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* responsive  media for mobile
  */
 
 @media screen and (max-width: 576px) {
 
     /* --common style-- */
-    header {
-        padding: 0% 10%;
+    header,
+    .habit-section {
+        padding: 0% 5%;
     }
 
     .tangerine-regular {
@@ -220,6 +291,11 @@ nav {
 
     a {
         font-size: 18px;
+    }
+
+    .section-title {
+        font-size: 32px;
+        font-weight: 900;
     }
 
     /* header style */
@@ -277,15 +353,15 @@ nav {
     .b1,
     .b2 {
         color: white;
-        border-radius: 20px;
-        width: 350px;
-        padding: 10px 20px;
+        border-radius: 35px;
+        padding: 15px 30px;
         font-size: 18px;
     }
 
     .b1 {
         border: 1px solid var(--primary-color);
         background-color: var(--primary-color);
+        padding: 15px 35px;
     }
 
     .b2 {
@@ -296,6 +372,10 @@ nav {
     .banner-part1,
     .banner-part2 {
         width: 100%;
+    }
+
+    #banner-p {
+        font-size: 16px;
     }
 
     .banner-p {
@@ -331,7 +411,7 @@ nav {
         padding-bottom: 5px;
         width: 153px;
         height: 73px;
-        left: 170px;
+        left: 210px;
         top: 89px;
     }
 
@@ -349,6 +429,28 @@ nav {
         width: 40px;
         height: 40px;
         border-radius: 50%;
+    }
+
+
+
+    /* Change Your Habits section */
+
+    .habit-section {
+        text-align: center;
+
+    }
+
+    .habit-section>p {
+        padding: 0;
+    }
+
+    .all-habits {
+        flex-direction: column;
+
+    }
+
+    .habit-item>p {
+        width: 230px;
     }
 
 }
