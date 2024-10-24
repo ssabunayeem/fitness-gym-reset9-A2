@@ -260,14 +260,16 @@ nav {
 
 .card {
     display: flex;
-    gap: 165px;
-    padding: 30px 50px;
+    justify-content: space-between;
+    gap: 35px;
+    padding: 30px;
     background-color: rgba(105, 103, 103, 0.541);
     border-radius: 25px;
 }
 
-.card1 {
-    flex: 1.5;
+.card1,
+.card2 {
+    width: 50%;
 }
 
 .card1>p {
@@ -295,12 +297,9 @@ nav {
     width: 466px;
     height: 412px;
     border-radius: 25px;
-    flex: 1;
+
 }
 
-.card2>img {
-    width: 150%;
-}
 
 
 
@@ -330,7 +329,8 @@ nav {
 
     /* --common style-- */
     header,
-    .habit-section {
+    .habit-section,
+    .run {
         padding: 0% 5%;
     }
 
@@ -500,6 +500,34 @@ nav {
 
     .habit-item>p {
         width: 230px;
+    }
+
+    /* run section */
+    .card {
+        flex-direction: column;
+        padding: 0px 0px 20px 40px;
+
+    }
+
+    .card1,
+    .card2 {
+        width: 100%;
+    }
+
+    .card1>p {
+        margin-bottom: 20px;
+
+    }
+
+    .card-btn {
+        font-size: 22px;
+        padding: 18px 90px;
+    }
+
+    .card2 {
+        background-size: 180%;
+        width: 287px;
+        height: 170px;
     }
 
 }
