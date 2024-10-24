@@ -122,16 +122,14 @@ nav {
 }
 
 .btn1,
-.btn2,
-.btn-mobile {
+.btn2 {
     margin-top: 90px;
     border: 1px solid white;
     border-radius: 4rem;
     padding: 1.7% 7%;
 }
 
-.btn1,
-.btn-mobile {
+.btn1 {
     border-color: var(--primary-color);
     margin-right: 14px;
     background-color: var(--primary-color);
@@ -139,6 +137,7 @@ nav {
 
 .btn-mobile {
     display: none;
+    width: 150px;
 }
 
 /* bos position style*/
@@ -148,6 +147,7 @@ nav {
 
 .box1,
 .box2 {
+    text-align: left;
     backdrop-filter: blur(20px);
     position: absolute;
     padding: 10px 25px;
@@ -190,6 +190,11 @@ nav {
     padding: 0;
 }
 
+.box2-p {
+    padding: auto;
+    margin-top: 20px;
+}
+
 .ball {
     background-color: var(--primary-color);
     width: 50px;
@@ -206,20 +211,29 @@ nav {
 
     /* --common style-- */
     header {
-        padding: 2% 10%;
+        padding: 0% 10%;
     }
 
     .tangerine-regular {
         font-size: 4rem;
     }
 
+    a {
+        font-size: 18px;
+    }
+
     /* header style */
+
     .nav-link {
         display: none;
     }
 
     .nav-link2 {
         display: block;
+    }
+
+    .website-icon {
+        font-size: 2.5rem;
     }
 
     .fa-solid {
@@ -229,17 +243,54 @@ nav {
 
     /* banner style */
     .banner {
+        margin-top: 0px;
+        display: flex;
         flex-direction: column;
+        gap: 50px;
+    }
+
+    .banner-part1 {
+        padding-top: 0rem;
+
     }
 
     .banner-title {
         margin-bottom: 10px;
-        font-size: 3em;
+        font-size: 2.5em;
         font-weight: 800;
     }
 
-    .btn1 {
+    .common-p {
+        font-size: 15px;
+    }
+
+    .button {
         display: none;
+    }
+
+    .btn-mobile {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .b1,
+    .b2 {
+        color: white;
+        border-radius: 20px;
+        width: 350px;
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    .b1 {
+        border: 1px solid var(--primary-color);
+        background-color: var(--primary-color);
+    }
+
+    .b2 {
+        border: 1px solid rgba(255, 255, 255, 0.39);
+        background-color: black;
     }
 
     .banner-part1,
@@ -251,17 +302,22 @@ nav {
         padding-right: 5%;
     }
 
-    .btn-mobile {
-        display: block;
-    }
 
     .banner-part2>img {
         width: 100%;
     }
 
-    .box1 {
 
-        width: 153px;
+    /* ----- position box ----- */
+
+    .box1,
+    .box2 {
+        padding: 5px 10px 0px 10px;
+        margin-bottom: 0;
+    }
+
+    .box1 {
+        width: 163px;
         height: 88px;
         left: 0px;
         top: 399px;
@@ -269,9 +325,30 @@ nav {
     }
 
     .box2 {
+        align-items: center;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-bottom: 5px;
         width: 153px;
-        height: 88px;
+        height: 73px;
         left: 170px;
         top: 89px;
     }
+
+    .box-h {
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .box-h2 {
+        font-size: 30px;
+    }
+
+    .ball {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
 }
