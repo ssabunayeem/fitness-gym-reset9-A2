@@ -1,7 +1,7 @@
 /* ------- common styles------ */
 :root {
     --primary-color: rgb(230, 83, 60);
-    --secondary-gray-color: rgba(255, 255, 255, 0.5);
+    --secondary-gray-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -339,13 +339,58 @@ nav {
 }
 
 
+/* bmi table */
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    color: white;
+    text-align: left;
+    padding: 15px 30px;
+    border: 1px solid rgb(87, 86, 86);
+}
+
+th {
+    font-weight: normal;
+}
+
+td {
+    color: var(--secondary-gray-color);
+}
 
 
+/* bmi form */
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.activity {
+    grid-column: span 2;
+}
+
+input,
+select {
+    font-size: 18px;
+    color: var(--secondary-gray-color);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px 25px;
+    border: 0;
+}
 
 
+input::placeholder {
+    color: var(--secondary-gray-color);
+}
 
-
-
+#bg {
+    background: rgba(255, 255, 255, 0.1);
+}
 
 
 
