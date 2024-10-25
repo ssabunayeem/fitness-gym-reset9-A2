@@ -751,7 +751,7 @@ footer {
 
 
     .bmi-section {
-        padding: 3% 3%;
+        padding: 3% 5%;
         padding-bottom: 50px;
         display: flex;
         justify-content: space-between;
@@ -782,7 +782,7 @@ footer {
     select {
         font-size: 14px;
         padding: 20px 0px;
-        padding-left: 15px;
+        padding-left: 10px;
     }
 
 
