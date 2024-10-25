@@ -28,9 +28,8 @@ body {
 header,
 .habit-section,
 .run,
-.bmi-section,
-.all-trainers-list {
-    padding: 0% 10%;
+.meet-our-team {
+    padding: 0% 15%;
     margin-bottom: 100px;
 }
 
@@ -320,7 +319,7 @@ nav {
 }
 
 .bmi-section {
-    padding: 3% 10%;
+    padding: 3% 15%;
     display: flex;
     justify-content: space-between;
 }
@@ -378,9 +377,9 @@ input,
 select {
     font-size: 18px;
     color: var(--secondary-gray-color);
-    border-radius: 12px;
+    border-radius: 15px;
     background: rgba(255, 255, 255, 0.1);
-    padding: 20px 25px;
+    padding: 20px 15px;
     border: 0;
 }
 
@@ -403,6 +402,11 @@ input::placeholder {
     display: grid;
     grid-template-columns: repeat(3, auto);
     gap: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .trainer {
@@ -410,8 +414,8 @@ input::placeholder {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    width: 380px;
-    height: 360px;
+    width: 350px;
+    height: 300px;
     padding-left: 30px;
     border-radius: 25px;
 
@@ -471,6 +475,12 @@ input::placeholder {
 
 
 
+
+
+
+
+
+
 /* responsive  media for mobile
  */
 
@@ -480,7 +490,7 @@ input::placeholder {
     header,
     .habit-section,
     .run,
-    .all-trainers-list {
+    .meet-our-team {
         padding: 0% 5%;
     }
 
@@ -694,6 +704,7 @@ input::placeholder {
 
     .bmi-section {
         padding: 3% 3%;
+        padding-bottom: 50px;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
@@ -727,7 +738,20 @@ input::placeholder {
     }
 
 
+    /* Meet Our Team section style */
 
+
+
+    .all-trainers-list {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        gap: 15px;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 10px;
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+    }
 
 
 
