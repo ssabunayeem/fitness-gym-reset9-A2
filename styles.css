@@ -607,4 +607,55 @@ input::placeholder {
         height: 170px;
     }
 
+
+    /*  BMI Calculator Chart section  */
+
+    .bmi-heading {
+        padding-left: 0%;
+    }
+
+    .bmi-heading>p {
+        width: 80%;
+    }
+
+
+    .bmi-section {
+        padding: 3% 3%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .bmi-flex-title {
+        font-size: 28px;
+        font-weight: 800;
+    }
+
+    .bmi-form>h3 {
+        margin-top: 60px;
+    }
+
+    .bmi-form>p {
+        width: 80%;
+
+    }
+
+
+    /* bmi form */
+    .form {
+        gap: 10px;
+    }
+
+    input,
+    select {
+        font-size: 14px;
+        padding: 20px 0px;
+        padding-left: 15px;
+    }
+
+
+
+
+
+
 }
