@@ -398,6 +398,10 @@ input::placeholder {
     text-align: center;
 }
 
+.meet-our-team>p {
+    padding: 0 20% 50px;
+}
+
 .all-trainers-list {
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -468,10 +472,54 @@ input::placeholder {
 }
 
 
+/* footer related styles */
+
+footer {
+    background: rgba(255, 255, 255, 0.1);
+
+}
+
+.footer-part>h2 {
+    font-size: 75px;
+    margin-bottom: 0;
+}
+
+.footer-dis {
+    padding-right: 25%;
+    font-size: 16px;
+}
+
+.all-footer-parts {
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr;
+    padding-top: 80px;
+    padding-left: 15%;
+
+}
+
+.footer-p {
+    font-size: 22px;
+}
+
+.footer-part>h3 {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
 
 
+.footer-end {
+    font-size: 20px;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    margin-bottom: 0;
+    padding: 50px;
 
+}
 
+.hr {
+    margin-top: 80px;
+    padding: 0 15%;
+}
 
 
 
@@ -741,6 +789,9 @@ input::placeholder {
     /* Meet Our Team section style */
 
 
+    .meet-our-team>p {
+        padding: 0 5% 50px;
+    }
 
     .all-trainers-list {
         display: grid;
@@ -753,6 +804,30 @@ input::placeholder {
         align-items: center;
     }
 
+    /* footer */
 
+    .footer-dis {
+        padding-right: 12%;
+        font-size: 14px;
+    }
 
+    .all-footer-parts {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 80px;
+        padding-left: 10%;
+
+    }
+
+    .footer-end {
+        font-size: 16px;
+        padding: 50px 0;
+        text-align: left;
+
+    }
+
+    .hr {
+        margin-top: 80px;
+        padding: 0 10%;
+    }
 }
