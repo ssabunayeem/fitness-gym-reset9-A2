@@ -28,7 +28,8 @@ body {
 header,
 .habit-section,
 .run,
-.bmi-section {
+.bmi-section,
+.all-trainers-list {
     padding: 0% 10%;
     margin-bottom: 100px;
 }
@@ -61,7 +62,7 @@ a {
 /* ------ header related icon ------- */
 
 header {
-    background-image: linear-gradient(rgba(39, 38, 38, 0.349), rgba(104, 102, 102, 0.514), rgba(32, 32, 32, 0.281));
+    background-image: linear-gradient(rgba(39, 38, 38, 0.349), rgba(117, 112, 107, 0.534), rgba(32, 32, 32, 0.281));
 }
 
 nav {
@@ -392,6 +393,77 @@ input::placeholder {
     background: rgba(255, 255, 255, 0.1);
 }
 
+/* Meet Our Team section style */
+
+.meet-our-team {
+    text-align: center;
+}
+
+.all-trainers-list {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 15px;
+}
+
+.trainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 380px;
+    height: 360px;
+    padding-left: 30px;
+    border-radius: 25px;
+
+}
+
+.trainer>h4 {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.trainer>p {
+    margin-top: 5px;
+}
+
+
+#trainer-1 {
+    background: linear-gradient(rgba(43, 42, 42, 0), rgba(9, 165, 139, 0.247)), url("images/trainer1.png");
+}
+
+#trainer-2 {
+    background: linear-gradient(rgba(43, 42, 42, 0), rgba(7, 2, 77, 0.329)), url("images/trainer2.png");
+}
+
+#trainer-3 {
+    background: linear-gradient(rgba(43, 42, 42, 0), rgba(150, 99, 4, 0.329)), url("images/trainer3.png");
+}
+
+#trainer-4 {
+    background: linear-gradient(rgba(42, 43, 43, 0), rgba(175, 50, 50, 0.329)), url("images/trainer4.png");
+}
+
+#trainer-5 {
+    background: linear-gradient(rgba(43, 42, 42, 0), rgba(88, 25, 124, 0.329)), url("images/trainer5.png");
+
+}
+
+#trainer-6 {
+    background: linear-gradient(rgba(43, 42, 42, 0), rgba(60, 175, 50, 0.329)), url("images/trainer6.png");
+}
+
+#trainer-1,
+#trainer-2,
+#trainer-3,
+#trainer-4,
+#trainer-5,
+#trainer-6 {
+    background-position: center top;
+    background-size: cover;
+}
+
+
 
 
 
@@ -407,7 +479,8 @@ input::placeholder {
     /* --common style-- */
     header,
     .habit-section,
-    .run {
+    .run,
+    .all-trainers-list {
         padding: 0% 5%;
     }
 
@@ -611,7 +684,7 @@ input::placeholder {
     /*  BMI Calculator Chart section  */
 
     .bmi-heading {
-        padding-left: 0%;
+        padding-left: 5%;
     }
 
     .bmi-heading>p {
