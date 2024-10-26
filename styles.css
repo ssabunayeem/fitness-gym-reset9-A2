@@ -9,6 +9,7 @@ body {
     font-family: "Inter", sans-serif;
     font-style: normal;
     background: black;
+
 }
 
 .inter-font {
@@ -28,7 +29,8 @@ body {
 header,
 .habit-section,
 .run,
-.meet-our-team {
+.meet-our-team,
+.product-section {
     padding: 0% 15%;
     margin-bottom: 100px;
 }
@@ -304,6 +306,72 @@ nav {
     border-radius: 25px;
 }
 
+/* Our Popular Products section */
+.product-section {
+    background: linear-gradient(rgba(32, 25, 22, 0.308), rgba(175, 13, 7, 0.404), rgba(20, 26, 26, 0.171));
+    margin-bottom: 200px;
+}
+
+.all-product {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+}
+
+.product-item {
+    border-radius: 25px;
+    width: 400px;
+    height: 400px;
+}
+
+.product-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.product-item>p {
+    color: lightsalmon;
+
+}
+
+.product-item>img {
+    width: 90%;
+    border-radius: 25px;
+}
+
+
+.product-p {
+    padding: 2% 0%;
+    margin: 0
+}
+
+.product-btn {
+    color: white;
+    font-weight: 600;
+    background-color: var(--primary-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  BMI Calculator Chart section  */
 
 .bmi-heading {
@@ -529,6 +597,9 @@ footer {
 
 
 
+
+/* ----------------------------------------------------------------responsive------------------------------------------------------------- */
+
 /* responsive  media for mobile
  */
 
@@ -538,7 +609,8 @@ footer {
     header,
     .habit-section,
     .run,
-    .meet-our-team {
+    .meet-our-team,
+    .product-section {
         padding: 0% 5%;
     }
 
@@ -737,6 +809,33 @@ footer {
         width: 287px;
         height: 170px;
     }
+
+    /* Our Popular Products section */
+    .product-section {
+        margin-bottom: 200px;
+    }
+
+    .all-product {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 80px;
+    }
+
+    .product-item>img {
+        width: 90%;
+        border-radius: 25px;
+    }
+
+    .product-btn {
+        padding: 20px 50px;
+    }
+
+
+
+
+
+
+
 
 
     /*  BMI Calculator Chart section  */
